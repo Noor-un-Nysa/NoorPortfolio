@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — Noor Un Nisa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+<header class="site-header">
+<div class="container">
+<a class="logo" href="index.html">Noor Un Nisa</a>
+<nav class="nav">
+<a href="index.html" class="nav-link">Home</a>
+<a href="about.html" class="nav-link">About</a>
+<a href="projects.html" class="nav-link">Projects</a>
+<a href="skills.html" class="nav-link">Skills</a>
+<a href="contact.html" class="nav-link">Contact</a>
+</nav>
+</div>
+</header>
+
+
+<main class="container main-content">
+<section class="card contact-card">
+<h2>Contact</h2>
+<p>I'd love to hear from you! Feel free to reach out via email or use the form below.</p>
+<p style="margin-top: 16px;">📧 Email: <strong><a href="mailto:noorunnysa@gmail.com" style="color: #667eea; text-decoration: none;">noorunnysa@gmail.com</a></strong></p>
+
+
+<form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+<!-- Netlify form configuration -->
+<input type="hidden" name="form-name" value="contact">
+<p style="display:none;">
+<label>Don't fill this out: <input name="bot-field" /></label>
+</p>
+
+<label>
+Name
+<input type="text" name="name" placeholder="Your name" required />
+</label>
+<label>
+Email
+<input type="email" name="email" placeholder="you@example.com" required />
+</label>
+<label>
+Message
+<textarea name="message" rows="5" placeholder="Your message..." required></textarea>
+</label>
+<button type="submit" class="btn">Send Message</button>
+</form>
+
+<div style="margin-top: 32px; padding-top: 32px; border-top: 2px solid #f1f5f9;">
+<p class="muted" style="text-align: center;">You can also find me on:</p>
+<div style="display: flex; justify-content: center; gap: 20px; margin-top: 16px;">
+<a href="https://github.com/Noor-un-Nysa" target="_blank" rel="noopener noreferrer" style="color: #667eea; text-decoration: none; font-weight: 600;">
+    <span style="font-size: 20px;">📱</span> GitHub
+
+</a>
+<a href="https://www.linkedin.com/in/noor-un-nysa" target="_blank" rel="noopener noreferrer" style="color: #667eea; text-decoration: none; font-weight: 600;">
+    <span style="font-size: 20px;">💼</span> LinkedIn
+</a>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">© <span id="year5"></span> Noor Un Nisa</div>
+</footer>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
