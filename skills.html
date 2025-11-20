@@ -5,6 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Skills — Noor Un Nisa</title>
 <link rel="stylesheet" href="style.css">
+<style>
+.skills-section {
+  margin-bottom: 32px;
+}
+
+.skills-section h3 {
+  color: #667eea;
+  font-size: 20px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stat-mini {
+  display: inline-block;
+  padding: 6px 14px;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #667eea;
+}
+
+.highlight-box {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  padding: 24px;
+  border-radius: 16px;
+  border-left: 4px solid #667eea;
+  margin-bottom: 24px;
+}
+</style>
 </head>
 <body>
 <div class="page">
@@ -21,29 +60,59 @@
 </div>
 </header>
 
-
 <main class="container main-content">
-<section class="card">
-<h2>Skills</h2>
-<ul class="skills-list">
-<li>Python</li>
-<li>NumPy</li>
-<li>Pandas</li>
-<li>scikit-learn</li>
-<li>TensorFlow / Keras</li>
-<li>PyTorch (basics)</li>
-<li>Data Visualization</li>
-</ul>
-</section>
-</main>
+<article class="card">
+<h2>My Skills</h2>
+<p style="font-size: 18px; color: #64748b; margin-bottom: 32px;">
+Here’s a snapshot of my technical skills and tools I enjoy working with:
+</p>
 
-
-<footer class="site-footer">
-<div class="container">© <span id="year4"></span> Noor Un Nisa</div>
-</footer>
+<!-- Programming & Scripting -->
+<div class="skills-section">
+<h3>💻 Programming & Scripting</h3>
+<div class="highlight-box">
+<span class="stat-mini">Python</span>
+<span class="stat-mini">NumPy</span>
+<span class="stat-mini">Pandas</span>
+<span class="stat-mini">JavaScript</span>
+</div>
 </div>
 
+<!-- Machine Learning & AI -->
+<div class="skills-section">
+<h3>🤖 Machine Learning & AI</h3>
+<div class="highlight-box">
+<span class="stat-mini">scikit-learn</span>
+<span class="stat-mini">TensorFlow</span>
+<span class="stat-mini">Keras</span>
+<span class="stat-mini">PyTorch (basics)</span>
+</div>
+</div>
+
+<!-- Data Visualization & Analysis -->
+<div class="skills-section">
+<h3>📊 Data Visualization & Analysis</h3>
+<div class="highlight-box">
+<span class="stat-mini">Matplotlib</span>
+<span class="stat-mini">Seaborn</span>
+<span class="stat-mini">Plotly</span>
+</div>
+</div>
+
+<p style="margin-top: 32px; color: #475569;">
+I am always learning new tools and techniques to transform data into insights and build practical solutions.
+</p>
+</article>
+</main>
+
+<footer class="site-footer">
+<div class="container">© <span id="year3"></span> Noor Un Nisa</div>
+</footer>
 
 <script src="script.js"></script>
+<script>
+  // Auto-update year in footer
+  document.getElementById('year3').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

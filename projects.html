@@ -3,8 +3,68 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Projects, Noor Un Nisa</title>
+<title>Projects — Noor Un Nisa</title>
 <link rel="stylesheet" href="style.css">
+<style>
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.project-card {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+  border-left: 4px solid #667eea;
+  border-radius: 16px;
+  padding: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  color: #667eea;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.project-card p {
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.link {
+  text-decoration: none;
+  color: #764ba2;
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-flex;
+  padding: 12px 28px;
+  background: #667eea;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+</style>
 </head>
 <body>
 <div class="page">
@@ -21,58 +81,64 @@
 </div>
 </header>
 
-
 <main class="container main-content">
 <section class="card">
 <h2>Projects</h2>
-<p class="muted" style="margin-bottom: 20px;">Explore my machine learning and deep learning projects</p>
-<div class="grid">
-<div class="project">
-<h3>🔢 Digit Recognition with CNNs</h3>
-<p>Convolutional Neural Networks implementation for handwritten digit recognition. Built with deep learning techniques for accurate classification.</p>
-<a href="https://github.com/Noor-un-Nysa/Digit-Recognition-with-Convolutional-Neural-Networks-CNNs-" target="_blank" rel="noopener noreferrer" class="link">View on GitHub</a>
-</div>
+<p style="color: #64748b; margin-bottom: 20px;">Explore my machine learning, deep learning, and full-stack projects:</p>
 
-<div class="project">
-<h3>✏️ MathScribe</h3>
-<p>Mobile application that converts handwritten mathematical expressions into digital form. Supports basic arithmetic operations including division, multiplication, and addition using AI.</p>
-<a href="https://github.com/Noor-un-Nysa/MathScribe" target="_blank" rel="noopener noreferrer" class="link">View on GitHub</a>
-</div>
+<div class="project-grid">
+  <!-- Project 1 -->
+  <div class="project-card">
+    <h3>🔢 Digit Recognition with CNNs</h3>
+    <p>Convolutional Neural Networks implementation for handwritten digit recognition. Built with deep learning techniques for accurate classification.</p>
+    <a href="https://github.com/Noor-un-Nysa/Digit-Recognition-with-Convolutional-Neural-Networks-CNNs-" target="_blank" class="link">View on GitHub</a>
+  </div>
 
-<div class="project">
-<h3>💰 Loan Approval Prediction</h3>
-<p>Machine learning model that predicts loan approval outcomes based on applicant data. Implements classification algorithms for financial decision-making.</p>
-<a href="https://github.com/Noor-un-Nysa/-Loan-Approval-Prediction-Project-" target="_blank" rel="noopener noreferrer" class="link">View on GitHub</a>
-</div>
+  <!-- Project 2 -->
+  <div class="project-card">
+    <h3>✏️ MathScribe</h3>
+    <p>Mobile app that converts handwritten mathematical expressions into digital form. Supports basic arithmetic operations using AI.</p>
+    <a href="https://github.com/Noor-un-Nysa/MathScribe" target="_blank" class="link">View on GitHub</a>
+  </div>
 
-<div class="project">
-<h3>🌐 Flask User Management System</h3>
-<p>Full-stack CRUD application featuring user management with dedicated Update/Delete pages, SQLite database, and modern responsive UI built with Tailwind CSS.</p>
-<a href="https://github.com/Noor-un-Nysa/flask-user-management-" target="_blank" rel="noopener noreferrer" class="link">View on GitHub</a>
-</div>
+  <!-- Project 3 -->
+  <div class="project-card">
+    <h3>💰 Loan Approval Prediction</h3>
+    <p>Machine learning model predicting loan approval outcomes using applicant data and classification algorithms for financial decisions.</p>
+    <a href="https://github.com/Noor-un-Nysa/-Loan-Approval-Prediction-Project-" target="_blank" class="link">View on GitHub</a>
+  </div>
 
-<div class="project">
-<h3>🧠 AI/ML/DL Learning Journey</h3>
-<p>Comprehensive repository documenting my learning path in AI, including hands-on exercises, notes, and projects covering Python fundamentals, OOP, and AI concepts.</p>
-<a href="https://github.com/Noor-un-Nysa/AI-ML-DL-" target="_blank" rel="noopener noreferrer" class="link">View on GitHub</a>
-</div>
+  <!-- Project 4 -->
+  <div class="project-card">
+    <h3>🌐 Flask User Management System</h3>
+    <p>Full-stack CRUD application featuring user management with SQLite, responsive UI, and modern design built with Tailwind CSS.</p>
+    <a href="https://github.com/Noor-un-Nysa/flask-user-management-" target="_blank" class="link">View on GitHub</a>
+  </div>
+
+  <!-- Project 5 -->
+  <div class="project-card">
+    <h3>🧠 AI/ML/DL Learning Journey</h3>
+    <p>Repository documenting my AI learning path, including hands-on exercises, notes, and projects covering Python, OOP, and AI concepts.</p>
+    <a href="https://github.com/Noor-un-Nysa/AI-ML-DL-" target="_blank" class="link">View on GitHub</a>
+  </div>
 </div>
 
 <div style="margin-top: 40px; text-align: center;">
-<a href="https://github.com/Noor-un-Nysa" target="_blank" rel="noopener noreferrer" class="btn">
+<a href="https://github.com/Noor-un-Nysa" target="_blank" class="btn">
 View All Projects on GitHub
 </a>
 </div>
 </section>
 </main>
 
-
 <footer class="site-footer">
-<div class="container">© <span id="year3"></span> Noor Un Nisa</div>
+<div class="container">© <span id="year"></span> Noor Un Nisa</div>
 </footer>
-</div>
-
 
 <script src="script.js"></script>
+<script>
+  // Auto-update year in footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

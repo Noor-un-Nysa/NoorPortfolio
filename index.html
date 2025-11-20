@@ -5,50 +5,69 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Noor Un Nisa — Portfolio</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 <div class="page">
 <header class="site-header">
 <div class="container">
-<a class="logo" href="index.html">Noor Un Nisa</a>
-<nav class="nav">
-<a href="index.html" class="nav-link">Home</a>
-<a href="about.html" class="nav-link">About</a>
-<a href="projects.html" class="nav-link">Projects</a>
-<a href="skills.html" class="nav-link">Skills</a>
-<a href="contact.html" class="nav-link">Contact</a>
-</nav>
+  <a class="logo" href="index.html">Noor Un Nisa</a>
+  <a href="https://github.com/Noor-un-Nysa" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/noor-un-nysa" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <nav class="nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="skills.html" class="nav-link">Skills</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
 </div>
 </header>
 
-
 <main class="container main-content">
 <section class="hero">
-<div class="hero-text">
-<h1>NOOR UN NISA</h1>
-<p class="subtitle">Python Developer and AI [ML/DL] — trainee level</p>
-<p class="lead">I build small ML prototypes and enjoy turning data into insights. Currently learning and building hands-on projects.</p>
-<div class="hero-cta">
-<a href="projects.html" class="btn">View Projects</a>
-<a href="contact.html" class="btn btn-outline">Get in touch</a>
-</div>
-</div>
-<div class="hero-photo">
-<div class="photo-frame">
-<img src="images/profile.jpg" alt="Noor Un Nisa" onerror="this.style.display='none'" />
-<div class="photo-placeholder">Noor</div>
-</div>
-</div>
+  <div class="hero-text">
+    <h1>I’m Noor Un Nisa 👋</h1>
+    <p class="subtitle">Python Developer | AI/ML Enthusiast | Data Explorer</p>
+   
+
+    <!-- What I Do Section -->
+    <div class="hero-whatido">
+      <h2>What I Do</h2>
+      <ul class="whatido-list">
+        <li>Python Development 🐍</li>
+        <li>Machine Learning & AI 🤖</li>
+        <li>Data Analysis & Visualization 📊</li>
+        <li>Project Prototyping & Experimentation 💡</li>
+      </ul>
+    </div>
+
+    <div class="hero-cta">
+      <a href="projects.html" class="btn">See My Work</a>
+      <a href="contact.html" class="btn btn-outline">Contact Me</a>
+    </div>
+  </div>
+
+  <div class="hero-photo">
+    <div class="photo-frame">
+      <img src="profile.jpg" alt="Noor Un Nisa" onerror="this.style.display='none'" />
+      <div class="photo-placeholder">Noor</div>
+    </div>
+  </div>
 </section>
+
 </main>
 
-
 <footer class="site-footer">
-<div class="container">© <span id="year"></span> Noor Un Nisa — Built simply</div>
-</footer>
+<div class="container">
+  © <span id="year"></span> Noor Un Nisa | Built with code & curiosity
 </div>
-
+</footer>
 
 <script src="script.js"></script>
+<script>
+  // Auto-update year in footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
